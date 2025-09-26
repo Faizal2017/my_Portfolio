@@ -41,6 +41,11 @@
   <header id="header" class="header d-flex flex-column justify-content-center">
 
     <i class="header-toggle d-xl-none bi bi-list"></i>
+    
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <i class="bi bi-moon-fill"></i>
+    </button>
 
     <nav id="navmenu" class="navmenu">
       <ul>
@@ -82,103 +87,146 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-     <!-- Section Title -->
-<div class="container section-title" data-aos="fade-up">
-  <h2>About Me</h2>
-  <h3> I'm a Software Engineering Undergraduate Student at SLIIT</h3>
-  <p>Hi, I'm Faizal, specializing in Software Engineering. I am passionate about developing innovative and efficient software solutions that solve real-world problems. With a strong foundation in programming and problem-solving, I enjoy exploring new technologies and continuously learning to enhance my skills. My goal is to grow as a developer and contribute to impactful projects that make a difference.</p>
-</div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <h3>Software Engineering Undergraduate at SLIIT</h3>
+        <p>Building innovative solutions that bridge technology and real-world needs</p>
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <div class="about-image-wrapper">
-              <img src="assets/img/profile-img.jpeg" class="img-fluid about-image" alt="Faizal Amaan">
-              <div class="about-overlay">
-                <div class="about-stats">
-                  <div class="stat-item">
-                    <i class="bi bi-trophy"></i>
-                    <span>CGPA: 3.67/4.0</span>
+            <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="Faizal Amaan">
+            
+            <!-- Personal Details -->
+            <div class="mt-4 personal-details-card">
+              <div class="personal-details-header">
+                <i class="bi bi-person-vcard me-2"></i>
+                <h4>Personal Details</h4>
+              </div>
+              <div class="personal-details-body">
+                <div class="personal-detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-person-badge"></i>
                   </div>
-                  <div class="stat-item">
-                    <i class="bi bi-calendar"></i>
-                    <span>4th Year Student</span>
+                  <div class="detail-info">
+                    <span class="detail-label">Name</span>
+                    <span class="detail-value">Faizal Amaan</span>
+                  </div>
+                </div>
+                <div class="personal-detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">Degree</span>
+                    <span class="detail-value">BSc( Hons) Software Engineering</span>
+                  </div>
+                </div>
+                <div class="personal-detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">CGPA</span>
+                    <span class="detail-value">3.67/4.0</span>
+                  </div>
+                </div>
+                <div class="personal-detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-calendar-date"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">Age</span>
+                    <span class="detail-value">24</span>
+                  </div>
+                </div>
+                <div class="personal-detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value">faizalamaan2@gmail.com</span>
+                  </div>
+                </div>
+                <div class="personal-detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-phone-fill"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">Phone</span>
+                    <span class="detail-value">+94 76 7310 839</span>
+                  </div>
+                </div>
+                <div class="personal-detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">City</span>
+                    <span class="detail-value">Colombo, Sri Lanka</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
           <div class="col-lg-8 content">
-            <div class="about-content-wrapper">
-              <!-- Three Equal Sections Layout -->
-              <div class="row gy-4">
-                <!-- Professional Summary -->
-                <div class="col-12">
-                  <div class="professional-summary">
-                    <div class="summary-header">
-                      <i class="bi bi-briefcase"></i>
-                      <h5>Professional Summary</h5>
-                    </div>
-                    <p class="summary-text">
-                      Motivated 4th-year Software Engineering undergraduate at SLIIT (CGPA: 3.67/4.0) with strong skills in Java, Python, C, C++, Next.js, MERN stack, and AI/ML. Proficient in OOP, Data Structures, and Algorithms, with excellent logical thinking and problem-solving abilities. Experienced in developing scalable web and mobile apps through academic projects. Seeking a software engineering internship to apply technical skills and contribute to impactful solutions.
-                    </p>
-                    
-                    <!-- Key Highlights -->
-                    <div class="key-highlights">
-                      <div class="highlight-item">
-                        <i class="bi bi-code-square"></i>
-                        <div>
-                          <h6>Full-Stack Development</h6>
-                          <p>MERN Stack, Next.js, Modern Web Technologies</p>
-                        </div>
-                      </div>
-                      <div class="highlight-item">
-                        <i class="bi bi-brain"></i>
-                        <div>
-                          <h6>Problem Solving</h6>
-                          <p>Data Structures, Algorithms, Logical Thinking</p>
-                        </div>
-                      </div>
-                      <div class="highlight-item">
-                        <i class="bi bi-laptop"></i>
-                        <div>
-                          <h6>Programming Languages</h6>
-                          <p>Java, Python, C, C++, JavaScript, TypeScript</p>
-                        </div>
-                      </div>
-                    </div>
+            <h2>My Journey</h2>
+            <p class="fst-italic py-3">
+Motivated 4th-year Software Engineering undergraduate at SLIIT (CGPA: 3.67/4.0) with strong skills in Java, Python, C, C++, Next.js, MERN stack, and AI/ML. Proficient in OOP, Data Structures, and Algorithms, with excellent logical thinking and problem-solving abilities. Experienced in developing scalable web and mobile apps through academic projects. Seeking a software engineering internship to apply technical skills and contribute to impactful solutions.            </p>
+            
+            <h2>Technical Focus</h2>
+            <p class="py-3">
+I specialize in full-stack software engineering, with expertise in Java, Python, JavaScript, and TypeScript. Skilled in React.js, Next.js, Node.js, Express.js, MongoDB, and MySQL, I build scalable, efficient, and user-focused applications. With strong foundations in OOP, data structures, and algorithms, I bridge robust backend systems with intuitive front-end experiences.            
+            <h2>Vision & Goals</h2>
+            <p class="py-3">
+              My vision is to create technology solutions with meaningful impact. I approach each project with commitment to quality and continuous improvement, thriving in collaborative environments where I can contribute technical skills while growing as a versatile developer.
+            </p>
+            
+            <!-- Key Highlights -->
+            <div class="key-highlights-card mt-4">
+              <div class="highlights-header">
+                <i class="bi bi-star-fill me-2"></i>
+                <h4>Key Highlights</h4>
+              </div>
+              <div class="highlights-body">
+                <div class="highlight-item">
+                  <div class="highlight-icon">
+                    <i class="bi bi-award"></i>
+                  </div>
+                  <div class="highlight-text">
+                    <strong>Dean's List</strong>
+                    <span>Academic Excellence Recognition</span>
                   </div>
                 </div>
-
-                <!-- Personal Info -->
-                <div class="col-lg-6">
-                  <div class="info-card">
-                    <div class="info-header">
-                      <i class="bi bi-person-circle"></i>
-                      <h5>Personal Info</h5>
-                    </div>
-                    <ul class="info-list">
-                      <li><i class="bi bi-calendar-heart"></i> <strong>Birthday:</strong> <span>26 Feb 2001</span></li>
-                      <li><i class="bi bi-geo-alt"></i> <strong>City:</strong> <span>Matale, Sri Lanka</span></li>
-                      <li><i class="bi bi-person-badge"></i> <strong>Age:</strong> <span>24</span></li>
-                    </ul>
+                <div class="highlight-item">
+                  <div class="highlight-icon">
+                    <i class="bi bi-code-square"></i>
+                  </div>
+                  <div class="highlight-text">
+                    <strong>Full-Stack Projects</strong>
+                    <span>MERN & Next.js Applications</span>
                   </div>
                 </div>
-
-                <!-- Contact Info -->
-                <div class="col-lg-6">
-                  <div class="info-card">
-                    <div class="info-header">
-                      <i class="bi bi-telephone-fill"></i>
-                      <h5>Contact Info</h5>
-                    </div>
-                    <ul class="info-list">
-                      <li><i class="bi bi-phone"></i> <strong>Phone:</strong> <span>+94 76 7310 839</span></li>
-                      <li><i class="bi bi-envelope"></i> <strong>Email:</strong> <span>faizalamaan2@gmail.com</span></li>
-                      <li><i class="bi bi-linkedin"></i> <strong>LinkedIn:</strong> <span>Available</span></li>
-                    </ul>
+                <div class="highlight-item">
+                  <div class="highlight-icon">
+                    <i class="bi bi-puzzle"></i>
+                  </div>
+                  <div class="highlight-text">
+                    <strong>Problem Solver</strong>
+                    <span>DSA & Algorithm Expertise</span>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="highlight-text">
+                    <strong>Team Player</strong>
+                    <span>Collaborative Development</span>
                   </div>
                 </div>
               </div>
@@ -190,157 +238,252 @@
 
     </section><!-- /About Section -->
 
-   
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
 <!-- Skills Section -->
 <section id="skills" class="skills section">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>Here are my technical and soft skills:</p>
+    <h2>Technical Skills</h2>
+    <p>My expertise in programming languages, frameworks, tools, and technologies</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- Skill Categories -->
-    <div class="accordion" id="skillsAccordion">
-
-      <!-- Technical Skills -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="technicalSkillsHeading">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#technicalSkills" aria-expanded="true" aria-controls="technicalSkills">
-            Technical Skills
-          </button>
-        </h2>
-        <div id="technicalSkills" class="accordion-collapse collapse show" aria-labelledby="technicalSkillsHeading">
-          <div class="accordion-body">
-            <div class="row skills-content skills-animation">
-              <div class="col-lg-6">
-                <div class="progress">
-                  <span class="skill"><span>MERN Stack</span> <i class="val">90%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+      <!-- Skills Cards -->
+      <div class="skills-section">
+        <div class="row g-4">
+              <!-- Languages Card -->
+              <div class="col-md-6 col-lg-3">
+                <div class="skill-terminal">
+                  <div class="terminal-header">
+                    <i class="bi bi-code-slash"></i> Languages
                   </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>Next.js</span> <i class="val">80%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>React</span> <i class="val">85%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>Java</span> <i class="val">80%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>Python</span> <i class="val">80%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-
-                
-              </div>
-              <div class="col-lg-6">
-                <div class="progress">
-                  <span class="skill"><span>C</span> <i class="val">85%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>C++</span> <i class="val">80%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>Tailwind CSS</span> <i class="val">80%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>SQL</span> <i class="val">85%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>CSS & Styling</span> <i class="val">75%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Soft Skills -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="softSkillsHeading">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#softSkills" aria-expanded="false" aria-controls="softSkills">
-            Soft Skills
-          </button>
-        </h2>
-        <div id="softSkills" class="accordion-collapse collapse" aria-labelledby="softSkillsHeading">
-          <div class="accordion-body">
-            <div class="row skills-content skills-animation">
-              <div class="col-lg-6">
-                <div class="progress">
-                  <span class="skill"><span>Team Collaboration</span> <i class="val">85%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="progress">
-                  <span class="skill"><span>Effective Communication</span> <i class="val">90%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="terminal-body">
+                    <div class="skill-item">
+                      <div class="skill-name">Java</div>
+                      <div class="skill-bar"><span style="width: 90%;"></span></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name">Python</div>
+                      <div class="skill-bar"><span style="width: 85%;"></span></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name">JavaScript</div>
+                      <div class="skill-bar"><span style="width: 80%;"></span></div>
+                    </div>
+                     <div class="skill-item">
+                      <div class="skill-name">TypeScript</div>
+                      <div class="skill-bar"><span style="width: 80%;"></span></div>
+                    </div>
+                    <div class="skill-more">
+                      <i class="bi bi-plus-circle me-1"></i> C/C++, PHP, Kotlin, HTML/CSS
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="progress">
-                  <span class="skill"><span>Problem-Solving</span> <i class="val">80%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              
+              <!-- Frameworks Card -->
+              <div class="col-md-6 col-lg-3">
+                <div class="skill-terminal">
+                  <div class="terminal-header">
+                    <i class="bi bi-layers"></i> Frameworks
+                  </div>
+                  <div class="terminal-body">
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>React.js</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Next.js</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Node.js</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Express.js</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-more">
+                      <i class="bi bi-plus-circle me-1"></i>Spring Boot, React Native, Tailwind CSS
+                    </div>
                   </div>
                 </div>
-                <div class="progress">
-                  <span class="skill"><span>Adaptability</span> <i class="val">75%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              
+              <!-- Tools Card -->
+              <div class="col-md-6 col-lg-3">
+                <div class="skill-terminal">
+                  <div class="terminal-header">
+                    <i class="bi bi-tools"></i> Tools
+                  </div>
+                  <div class="terminal-body">
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Git & GitHub</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Docker</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Postman</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Figma</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-more">
+                      <i class="bi bi-plus-circle me-1"></i>GitHub Actions, Swagger, VS Code
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Databases Card -->
+              <div class="col-md-6 col-lg-3">
+                <div class="skill-terminal">
+                  <div class="terminal-header">
+                    <i class="bi bi-database"></i> Databases
+                  </div>
+                  <div class="terminal-body">
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>MongoDB</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>MySQL</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-item">
+                      <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Firebase</div>
+                      <div class="skill-dot"></div>
+                    </div>
+                    <div class="skill-more">
+                      <i class="bi bi-plus-circle me-1"></i>NoSQL & Relational DB Experience
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </div>
 
-    </div><!-- End Accordion -->
+      <!-- Soft Skills Section Title -->
+      <div class="container section-title mt-5" data-aos="fade-up">
+        <h2>Soft Skills</h2>
+        <p>My professional attributes and interpersonal abilities</p>
+      </div>
 
-  </div>
-
-</section><!-- /Skills Section -->
+      <!-- Soft Skills Cards -->
+      <div class="skills-section">
+        <div class="row g-4">
+          <!-- Team Collaboration -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-terminal">
+              <div class="terminal-header">
+                <i class="bi bi-people"></i> Teamwork
+              </div>
+              <div class="terminal-body">
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Team Collaboration</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Leadership</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Conflict Resolution</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-more">
+                  <i class="bi bi-plus-circle me-1"></i>Project Management, Team Building
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Communication -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-terminal">
+              <div class="terminal-header">
+                <i class="bi bi-chat-dots"></i> Communication
+              </div>
+              <div class="terminal-body">
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Technical Writing</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Public Speaking</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Client Interaction</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-more">
+                  <i class="bi bi-plus-circle me-1"></i>Documentation, Knowledge Sharing
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Problem Solving -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-terminal">
+              <div class="terminal-header">
+                <i class="bi bi-lightbulb"></i> Problem Solving
+              </div>
+              <div class="terminal-body">
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Critical Thinking</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Analytical Skills</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Troubleshooting</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-more">
+                  <i class="bi bi-plus-circle me-1"></i>Decision Making, Research Skills
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Adaptability -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-terminal">
+              <div class="terminal-header">
+                <i class="bi bi-arrow-repeat"></i> Work Ethic
+              </div>
+              <div class="terminal-body">
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Time Management</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Adaptability</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name"><i class="bi bi-check2-circle me-2"></i>Continuous Learning</div>
+                  <div class="skill-dot"></div>
+                </div>
+                <div class="skill-more">
+                  <i class="bi bi-plus-circle me-1"></i>Attention to Detail, Self-Motivation
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></section><!-- /Skills Section -->
 
 
 
@@ -353,7 +496,7 @@
         <h2>Resume</h2>
         <p>Click the button below to download my CV and learn more about my skills, experience, and achievements. Feel free to explore my professional journey and how I can contribute to future opportunities.</p>
         <!-- Button to download PDF -->
-        <a href="./assets/resume//myresume.pdf" class="btn btn-primary" download="Faizal_Amaan_Resume.pdf">Download Resume</a>
+        <a href="./assets/resume//myresume.pdf" class="btn btn-primary" download="Faizal_Amaan_Resume.pdf" style="margin-top: 20px; display: inline-block;">Download Resume</a>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -414,6 +557,55 @@
                 <p class="education-institution"><i class="bi bi-geo-alt"></i> St. Thomas' College, Matale</p>
                 <div class="education-details">
                   <p class="education-description">Completed Advanced Level studies in Commerce stream, establishing a solid foundation in business and economics principles. This background provides valuable perspective for software solutions in business contexts.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Awards Section -->
+            <h3 class="resume-title text-center mb-5 mt-5">Academic Awards</h3>
+            <div class="row g-4">
+              <!-- Dean's List Award Y1S2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="award-card">
+                  <div class="award-icon">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="award-body">
+                    <h4 class="award-title">Dean's List Award</h4>
+                    <p class="award-semester">Year 1 | Semester 2</p>
+                    <div class="award-gpa">GPA: 3.86</div>
+                    <p class="award-institution">Sri Lanka Institute of Information Technology (SLIIT)</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Dean's List Award Y2S1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="award-card">
+                  <div class="award-icon">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="award-body">
+                    <h4 class="award-title">Dean's List Award</h4>
+                    <p class="award-semester">Year 2 | Semester 1</p>
+                    <div class="award-gpa">GPA: 3.88</div>
+                    <p class="award-institution">Sri Lanka Institute of Information Technology (SLIIT)</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Dean's List Award Y2S2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="award-card">
+                  <div class="award-icon">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="award-body">
+                    <h4 class="award-title">Dean's List Award</h4>
+                    <p class="award-semester">Year 2 | Semester 2</p>
+                    <div class="award-gpa">GPA: 3.89</div>
+                    <p class="award-institution">Sri Lanka Institute of Information Technology (SLIIT)</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -583,7 +775,7 @@
         <div class="row gy-4 justify-content-center">
 
           <div class="col-lg-4 col-md-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
@@ -593,7 +785,7 @@
           </div>
 
           <div class="col-lg-4 col-md-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call me</h3>
@@ -603,7 +795,7 @@
           </div>
 
           <div class="col-lg-4 col-md-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email </h3>
@@ -656,6 +848,40 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    // Dark Mode Toggle Functionality
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const icon = darkModeToggle.querySelector('i');
+
+    // Check for saved dark mode preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    // Update toggle button icon based on current theme
+    function updateToggleIcon(theme) {
+      if (theme === 'dark') {
+        icon.className = 'bi bi-sun-fill';
+      } else {
+        icon.className = 'bi bi-moon-fill';
+      }
+    }
+
+    // Initialize icon
+    updateToggleIcon(currentTheme);
+
+    // Toggle dark mode
+    darkModeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateToggleIcon(newTheme);
+    });
+  </script>
 
 </body>
 
