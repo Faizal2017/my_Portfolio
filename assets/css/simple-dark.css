@@ -1,0 +1,26 @@
+/* Simple Dark Mode CSS */
+[data-theme="dark"] #content-container {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3, 
+[data-theme="dark"] h4 {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] p {
+  color: #e0e0e0 !important;
+}
+
+/* Dark mode for footer */
+[data-theme="dark"] footer {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .social-links a {
+  color: #e0e0e0 !important;
+  border-color: #444 !important;
+}

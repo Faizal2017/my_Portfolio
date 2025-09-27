@@ -1,0 +1,38 @@
+/* 
+   Force dark background on content container
+   This file focuses specifically on the content container that still shows as white in dark mode 
+*/
+
+/* Target the content container with multiple selectors for maximum specificity */
+html[data-theme="dark"] .content,
+html[data-theme="dark"] .col-lg-8.content,
+html[data-theme="dark"] #about .col-lg-8.content,
+html[data-theme="dark"] #about .container .row .col-lg-8.content,
+html[data-theme="dark"] #about > div > div > div.col-lg-8.content {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+/* Additional style to ensure content div is styled correctly */
+html[data-theme="dark"] [data-dark-bg="true"] {
+    background-color: #2d2d2d !important;
+}
+
+/* Ensure all children elements inherit proper styling */
+html[data-theme="dark"] .col-lg-8.content * {
+    color: inherit;
+}
+
+/* Override any Bootstrap background classes */
+html[data-theme="dark"] .bg-white,
+html[data-theme="dark"] .bg-light,
+html[data-theme="dark"] [class*="bg-"] {
+    background-color: inherit !important;
+}
+
+/* Force dark background with !important on parent elements that might be causing the issue */
+html[data-theme="dark"] #about .container,
+html[data-theme="dark"] #about .row {
+    background: transparent !important;
+}

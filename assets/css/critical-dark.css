@@ -1,0 +1,26 @@
+/* 
+   Critical Dark Mode Fix
+   This file contains rules with maximum specificity to override any conflicting styles
+*/
+
+/* Direct targeting of the specific element with !important */
+html[data-theme="dark"] #about .container .row .col-lg-8.content {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Force dark background with attribute selector */
+[data-dark-bg="true"][data-theme="dark"],
+html[data-theme="dark"] [data-dark-bg="true"] {
+    background-color: #2d2d2d !important;
+}
+
+/* Override any inline styles */
+html[data-theme="dark"] .content {
+    background-color: #2d2d2d !important;
+}
+
+/* Immediate direct style for the selected container */
+#about .container .row .col-lg-8.content[style*="background-color"] {
+    background-color: var(--background-color) !important;
+}

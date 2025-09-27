@@ -1,3 +1,20 @@
+[data-theme="dark"] #about,
+[data-theme="dark"] #about .container,
+[data-theme="dark"] #about .container .row {
+  background-color: #222 !important;
+}
+[data-theme="dark"] #about .container .row .col-lg-8.content,
+[data-theme="dark"] #about .container .row #content-container,
+[data-theme="dark"] #content-container {
+  background-color: #222 !important;
+  color: #f5f5f5 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+[data-theme="dark"] #content-container {
+  background-color: #222 !important;
+  color: #f5f5f5 !important;
+}
 /**
 * Template Name: MyResume
 * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -755,6 +772,15 @@ section,
   color: var(--accent-color);
 }
 
+[data-theme="dark"] .about .content,
+[data-theme="dark"] #about > div:nth-child(2) > div > div.col-lg-8.content {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -1050,6 +1076,19 @@ section,
   color: #aaa;
 }
 
+[data-theme="dark"] .highlight-icon {
+  background: rgba(77, 184, 232, 0.1);
+  border-color: transparent;
+}
+
+[data-theme="dark"] .highlights-header {
+  background: linear-gradient(135deg, #2980b9, var(--accent-color));
+}
+
+[data-theme="dark"] .highlights-header h4 {
+  color: #ffffff;
+}
+
 .dark-mode .about-paragraph {
   color: #e0e0e0;
 }
@@ -1073,6 +1112,64 @@ section,
 
 .dark-mode .detail-value {
   color: #e0e0e0;
+}
+
+/* Content container dark mode fix */
+[data-theme="dark"] .content,
+[data-theme="dark"] .col-lg-8.content {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0;
+}
+
+/* About Section Content Areas - Dark Mode Styling */
+.journey-section h2,
+.technical-section h2,
+.vision-section h2 {
+  color: var(--accent-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 15px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.journey-section,
+.technical-section,
+.vision-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-section p,
+.technical-section p,
+.vision-section p {
+  color: var(--default-color);
+}
+
+/* Dark mode specific styling for content sections */
+[data-theme="dark"] .journey-section,
+[data-theme="dark"] .technical-section,
+[data-theme="dark"] .vision-section {
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .journey-section h2,
+[data-theme="dark"] .technical-section h2,
+[data-theme="dark"] .vision-section h2 {
+  color: #4db8e8;
+  border-left-color: #4db8e8;
+  margin-left: 0;
+}
+
+[data-theme="dark"] .journey-section p,
+[data-theme="dark"] .technical-section p,
+[data-theme="dark"] .vision-section p {
+  color: #e0e0e0 !important; /* Using !important to override any conflicting styles */
 }
 
 /*--------------------------------------------------------------
@@ -2277,24 +2374,38 @@ section,
 }
 
 .footer .social-links a {
-  background: rgba(52, 152, 219, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(52, 152, 219, 0.2);
-  width: 40px;
-  height: 40px;
+  background: transparent;
+  border: 2px solid #e0e0e0;
+  width: 44px;
+  height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--accent-color);
-  margin: 0 5px;
-  transition: all 0.3s ease;
+  margin: 0 7px;
+  font-size: 22px;
+  transition: all 0.3s cubic-bezier(.4,2,.3,1);
+}
+
+/* Social icon brand colors */
+.footer .social-links a[href*="github"] i {
+  color: #333;
+}
+.footer .social-links a[href*="facebook"] i {
+  color: #1877f3;
+}
+.footer .social-links a[href*="instagram"] i {
+  color: #e4405f;
+}
+.footer .social-links a[href*="linkedin"] i {
+  color: #0a66c2;
 }
 
 .footer .social-links a:hover {
-  background: var(--accent-color);
-  color: white;
-  transform: translateY(-3px);
+  background: transparent;
+  border-color: transparent;
+  transform: translateY(-6px) scale(1.15);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /*--------------------------------------------------------------
@@ -3624,4 +3735,207 @@ section,
 
 .dark-mode .award-card:hover .award-title {
   color: #ffd54f;
+}
+
+/* Dark mode styles for about, education, skills, and awards sections that match project styling */
+[data-theme="dark"] .about {
+  color: var(--default-color);
+}
+
+[data-theme="dark"] .about .content h2,
+[data-theme="dark"] .about .content h3 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+[data-theme="dark"] .about .content {
+  background-color: #2d2d2d !important;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+[data-theme="dark"] .about .content h2 {
+  color: #ffffff !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+[data-theme="dark"] .about .content p {
+  color: #e0e0e0 !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] .about .personal-details-card {
+  background: var(--surface-color);
+  border: 1px solid #3d3d3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .about .personal-detail-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .about .personal-detail-item:hover {
+  background: rgba(77, 184, 232, 0.1);
+  transform: translateX(8px);
+}
+
+[data-theme="dark"] .about .detail-label {
+  color: rgba(224, 224, 224, 0.8);
+}
+
+[data-theme="dark"] .about .detail-value {
+  color: var(--heading-color);
+}
+
+[data-theme="dark"] .about .btn {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* Skills section */
+[data-theme="dark"] .skills {
+  color: var(--default-color);
+}
+
+[data-theme="dark"] .skills .skill-terminal {
+  background: var(--surface-color);
+  border: 1px solid #3d3d3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .skills .terminal-header {
+  background: rgba(77, 184, 232, 0.1);
+  border-bottom: 1px solid rgba(77, 184, 232, 0.2);
+  color: var(--heading-color);
+}
+
+[data-theme="dark"] .skills .terminal-header i {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .skills .skill-icon {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .skills .terminal-body {
+  background-color: var(--surface-color);
+  border: none;
+}
+
+[data-theme="dark"] .skills .skill-item {
+  background: rgba(77, 184, 232, 0.05);
+  border: 1px solid rgba(77, 184, 232, 0.15);
+  color: var(--default-color);
+}
+
+[data-theme="dark"] .skills .skill-name {
+  color: var(--default-color);
+}
+
+[data-theme="dark"] .skills .skill-more {
+  color: rgba(224, 224, 224, 0.7);
+  background: rgba(77, 184, 232, 0.05);
+}
+
+[data-theme="dark"] .skills .skill-item:hover {
+  background: rgba(77, 184, 232, 0.1);
+  transform: translateY(-3px);
+  border-color: rgba(77, 184, 232, 0.3);
+}
+
+[data-theme="dark"] .skills .skill-item:hover .skill-name {
+  color: #4db8e8;
+}
+
+/* Resume/Education section */
+[data-theme="dark"] .resume {
+  color: var(--default-color);
+}
+
+[data-theme="dark"] .resume .resume-title {
+  color: var(--heading-color);
+}
+
+[data-theme="dark"] .resume .resume-item {
+  background: var(--surface-color);
+  border-left: 2px solid var(--accent-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .resume .resume-item h4 {
+  color: var(--heading-color);
+}
+
+[data-theme="dark"] .resume .resume-item h5 {
+  background: rgba(77, 184, 232, 0.1);
+  color: var(--accent-color);
+}
+
+[data-theme="dark"] .resume .resume-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Awards section */
+[data-theme="dark"] .resume .award-card {
+  background: var(--surface-color);
+  border: 1px solid #3d3d3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .resume .award-card:hover {
+  background: rgba(77, 184, 232, 0.05);
+  transform: translateY(-3px);
+  border-color: var(--accent-color);
+}
+
+[data-theme="dark"] .resume .award-title {
+  color: var(--heading-color);
+}
+
+[data-theme="dark"] .resume .award-icon {
+  background: rgba(77, 184, 232, 0.1);
+}
+
+[data-theme="dark"] .resume .award-icon i {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .resume .award-gpa {
+  color: var(--accent-color);
+  background: rgba(77, 184, 232, 0.1);
+}
+
+[data-theme="dark"] .resume .award-semester {
+  color: rgba(224, 224, 224, 0.8);
+}
+
+[data-theme="dark"] .resume .award-institution {
+  color: rgba(224, 224, 224, 0.7);
+}
+
+/* Make icons white in dark mode for specific sections */
+[data-theme="dark"] .about .bi,
+[data-theme="dark"] .skills .bi,
+[data-theme="dark"] .resume .bi,
+[data-theme="dark"] .services .bi,
+[data-theme="dark"] .contact .bi {
+  color: #ffffff;
+}
+
+/* Preserve brand colors for footer social icons */
+[data-theme="dark"] .footer .social-links a[href*="github"] i {
+  color: #ffffff;
+}
+[data-theme="dark"] .footer .social-links a[href*="facebook"] i {
+  color: #1877f3;
+}
+[data-theme="dark"] .footer .social-links a[href*="instagram"] i {
+  color: #e4405f;
+}
+[data-theme="dark"] .footer .social-links a[href*="linkedin"] i {
+  color: #0a66c2;
 }

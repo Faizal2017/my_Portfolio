@@ -1,0 +1,27 @@
+/* Most direct approach possible */
+body.dark-mode-active #content-container,
+body.dark-mode-active .col-lg-8.content,
+html[data-theme="dark"] #content-container,
+#content-container[data-dark-bg="true"] {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Apply styles directly to the element by ID */
+#content-container {
+    background-color: #fff;
+}
+
+html[data-theme="dark"] #content-container {
+    background-color: #2d2d2d !important;
+}
+
+/* Override any other styles */
+.dark-mode-active .col-lg-8.content * {
+    background-color: transparent;
+}
+
+/* Brute force - style by ID - guaranteed to have higher specificity */
+#content-container.col-lg-8.content[data-dark-bg="true"] {
+    background-color: #2d2d2d !important;
+}

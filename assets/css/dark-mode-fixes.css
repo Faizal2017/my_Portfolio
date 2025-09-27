@@ -1,0 +1,31 @@
+/* Additional dark mode fixes */
+[data-theme="dark"] .about .content {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0 !important;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific selector for the parent container to override any conflicting styles */
+[data-theme="dark"] #about .container .row .col-lg-8.content {
+  background-color: #2d2d2d !important;
+  border: 1px solid #444 !important;
+}
+
+/* Target the exact content div with the highest specificity possible */
+[data-theme="dark"] #about > div:nth-child(2) > div > div.col-lg-8.content {
+  background-color: #2d2d2d !important;
+}
+
+/* Ensure text is readable on dark backgrounds */
+[data-theme="dark"] .journey-section p,
+[data-theme="dark"] .technical-section p,
+[data-theme="dark"] .vision-section p {
+  color: #e0e0e0 !important;
+}
+
+/* Override any Bootstrap background classes that might be interfering */
+[data-theme="dark"] .col-lg-8.content {
+  background-color: #2d2d2d !important;
+}
