@@ -425,6 +425,36 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+/* Dark mode navigation styles */
+[data-theme="dark"] .navmenu a,
+[data-theme="dark"] .navmenu a:focus {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .navmenu a i,
+[data-theme="dark"] .navmenu a:focus i {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .navmenu a span,
+[data-theme="dark"] .navmenu a:focus span {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .navmenu a:hover,
+[data-theme="dark"] .navmenu .active,
+[data-theme="dark"] .navmenu .active:focus,
+[data-theme="dark"] .navmenu li:hover>a {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .navmenu a:hover i,
+[data-theme="dark"] .navmenu .active i,
+[data-theme="dark"] .navmenu .active:focus i,
+[data-theme="dark"] .navmenu li:hover>a i {
+  color: #ffffff;
+}
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
