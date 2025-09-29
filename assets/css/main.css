@@ -2685,8 +2685,16 @@ section,
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent-color) 0%, var(--secondary-accent) 100%);
+  bottom: 0;
+  border-radius: 15px;
+  padding: 2px;
+  background: linear-gradient(135deg, transparent 0%, transparent 50%, #3498db 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, background 0.5s ease;
 }
 
 .education-card:hover {
@@ -3608,7 +3616,9 @@ section,
 }
 
 .dark-mode .skill-item:hover .skill-name {
-  color: #4dabf7;
+  color: #3498db;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .dark-mode .terminal-body {
@@ -3626,12 +3636,6 @@ section,
 .dark-mode .skill-more {
   color: #aaa;
   background: #333;
-}
-
-@media (max-width: 768px) {
-  .skill-terminal {
-    margin-bottom: 15px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -3927,7 +3931,7 @@ section,
 }
 
 [data-theme="dark"] .resume .award-icon {
-  background: rgba(77, 184, 232, 0.1);
+  background: linear-gradient(45deg, #FFD700, #FFA500);
 }
 
 [data-theme="dark"] .resume .award-icon i {
