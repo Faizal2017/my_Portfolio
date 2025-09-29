@@ -81,7 +81,7 @@
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2>Faizal Amaan</h2>
+            <h2 class="glow-text">Faizal Amaan</h2>
             <p>I'm <span class="typed" data-typed-items="Designer, Developer,Learner">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="https://github.com/Faizal2017"><i class="bi bi-github"></i></a>
@@ -932,6 +932,46 @@ I specialize in full-stack software engineering, with expertise in Java, Python,
   </script>
   
   <!-- Immediate fix script -->
+  <style>
+  .glow-text {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(87, 202, 244, 0.5),
+                 0 0 40px rgba(87, 202, 244, 0.4),
+                 0 0 50px rgba(87, 202, 244, 0.3),
+                 0 0 60px rgba(87, 202, 244, 0.2);
+    animation: pulsate 2s infinite alternate;
+  }
+  
+  /* Glowing animation */
+  @keyframes pulsate {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                   0 0 20px rgba(255, 255, 255, 0.5),
+                   0 0 30px rgba(87, 202, 244, 0.5);
+    }
+    100% {
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+                   0 0 25px rgba(255, 255, 255, 0.7),
+                   0 0 35px rgba(87, 202, 244, 0.7),
+                   0 0 45px rgba(87, 202, 244, 0.5),
+                   0 0 55px rgba(87, 202, 244, 0.4),
+                   0 0 65px rgba(87, 202, 244, 0.3);
+    }
+  }
+
+  /* Dark mode adjustments */
+  [data-theme="dark"] .glow-text {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(87, 202, 244, 0.6),
+                 0 0 40px rgba(87, 202, 244, 0.5),
+                 0 0 50px rgba(87, 202, 244, 0.4),
+                 0 0 60px rgba(87, 202, 244, 0.3);
+  }
+</style>
 
 </body>
 
